@@ -261,6 +261,7 @@ footer span {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     color: var(--primary-text-color);
+    transition: 0.3s;
 }
 
 #cc {
@@ -282,6 +283,11 @@ footer a:hover {
     color: var(--secondary-text-color);
 }
 
+div#source span:hover {
+    color: var(--secondary-text-color);
+}
+
 #copyright {
     color: var(--primary-text-color);
+    margin-bottom: .5rem;
 }
