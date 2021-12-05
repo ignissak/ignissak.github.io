@@ -1,0 +1,287 @@
+@import url("https://dev-cats.github.io/code-snippets/JetBrainsMono.css");
+
+:root {
+    --primary-text-color: #4C5454;
+    --secondary-text-color: #A8BABA;
+    --primary-color: #93DDD3;
+    --background-color: #F2F2F2;
+}
+
+/* Changing root font size to 16px */
+html {
+    font-size: 16px;
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1#title {
+    font-size: 5rem; /* 96px */
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    margin: 0;
+}
+
+h2#subtitle {
+    font-size: 2rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    margin: 0;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--primary-text-color);
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.headerContent {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.material-icons-round.md-3 {
+    font-size: 3rem;
+    color: var(--primary-text-color)
+}
+
+#moveDown {
+    position: absolute;
+    margin: 2rem 0;
+    transition: .5s;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+}
+
+
+#moveDown:hover {
+    bottom: -1rem;
+}
+
+.separator {
+    width: 6rem;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-right: 2rem;
+    display: inline-block;
+}
+
+div.section-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 4rem auto;
+}
+
+h2.section-title {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+main {
+    margin: 0 32rem;
+}
+
+.content-margin {
+    margin: 0 2rem;
+}
+
+div.margin-bottom-2 {
+    margin-bottom: 2rem;
+}
+
+img {
+    clip-path: circle();
+    max-width: 18rem;
+    max-height: 18rem;
+    display: block;
+    margin: 0;
+}
+
+.social-media-icon {
+    font-size: 2rem;
+    color: var(--primary-text-color);
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transition: .3s;
+}
+
+.fa-phone {
+    padding-right: 0;
+}
+
+.fa-linkedin {
+    padding-left: 0;
+}
+
+.social-media-icons {
+    text-align: center;
+    /* margin: 0 auto; */
+    display: inline-flex;
+}
+
+.social-media-icon:hover {
+    color: var(--secondary-text-color);
+}
+
+.footer-icon {
+    display: inline;
+    color: inherit;
+}
+
+.about {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+}
+
+.left {
+    flex-grow: 1;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.left p {
+    margin: 0;
+    max-width: 60ch;
+}
+
+.right {
+    flex-grow: 1;
+}
+
+.profile-block {
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+}
+
+@media (max-width: 1700px) {
+    main {
+        margin: 0 16rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .left {
+        /* FONT-WEIGHT: 500; */
+        /* flex: 0 0 100%; */
+        max-width: 100%;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .profile-block {
+        margin: 0;
+        margin-top: 2rem;
+    }
+    
+    .left {
+        /* FONT-WEIGHT: 500; */
+        flex: 0 0 100%;
+    }
+
+    .left p {
+        max-width: 100%;
+    }
+
+    span.year {
+        float: initial !important;
+        padding-left: 1rem;
+    }
+}
+
+h3 {
+    display: inline;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    justify-content: space-between;
+}
+
+h4 {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    font-size: 0.875rem;
+    margin: 0 0 1rem 0;
+}
+
+span.year {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    font-size: 1rem;
+    text-align: right;
+    float: right;
+}
+
+footer {
+    margin: 4rem auto 2rem auto;
+    text-align: center;
+}
+
+footer span {
+    display: inline;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+
+#cc {
+    display: inline-block;
+    margin: 1rem;
+}
+
+#cc i {
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: var(--secondary-text-color);
+}
+
+#copyright {
+    color: var(--primary-text-color);
+}
