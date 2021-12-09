@@ -287,6 +287,12 @@ img {
     }
 }
 
+@media (orientation: landscape) {
+    #moveDown {
+        margin: 0;
+    }
+}
+
 h3 {
     display: inline;
     font-family: 'Inter', sans-serif;
