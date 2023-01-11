@@ -2080,11 +2080,6 @@ h2 {
   line-height: 2.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -2100,9 +2095,9 @@ h2 {
   line-height: 1.5rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold {
@@ -2193,14 +2188,14 @@ h2 {
   line-height: 1;
 }
 
-.text-zinc-100 {
-  --tw-text-opacity: 1;
-  color: rgb(244 244 245 / var(--tw-text-opacity));
-}
-
 .text-zinc-400 {
   --tw-text-opacity: 1;
   color: rgb(161 161 170 / var(--tw-text-opacity));
+}
+
+.text-zinc-100 {
+  --tw-text-opacity: 1;
+  color: rgb(244 244 245 / var(--tw-text-opacity));
 }
 
 .text-blue-800 {
@@ -2741,8 +2736,29 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -2753,6 +2769,10 @@ h2 {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:items-center {
+    align-items: center;
   }
 
   .lg\:justify-between {
