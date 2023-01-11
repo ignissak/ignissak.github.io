@@ -16,7 +16,7 @@
         @apply text-2xl text-zinc-400 hover:text-zinc-100 font-bold;
     }
     .container {
-        @apply snap-center px-4 md:px-32 lg:px-48 min-w-full min-h-screen w-screen;
+        @apply snap-center px-4 md:px-32 lg:px-48 2k:px-24vw min-w-full min-h-screen w-screen;
     }
 }
 
