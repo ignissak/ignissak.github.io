@@ -17,7 +17,7 @@ module.exports = {
 				'xxs': '16rem'
 			},
 			backgroundImage: {
-				'gradient': 'url("/img/gradient.png")',
+				'gradient': 'url("/img/gradient.webp")',
 			}
 		},
 	},
